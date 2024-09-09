@@ -1,0 +1,250 @@
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style: font, color, background */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #d4a373;
+}
+
+/* Custom font definitions */
+@font-face {
+    font-family: 'Shrikhand-Regular';
+    src: url("fonts/Shrikhand-Regular.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlteHaasGroteskBold';
+    src: url("fonts/AlteHaasGroteskBold.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlteHaasGrotesRegular';
+    src: url("fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+    font-style: normal;
+}
+
+/* Style for images (ID card) */
+.id-card {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+/* Header styles: background, color, padding */
+header {
+    background: #c4661f;
+    color: #efdcac;
+    padding: 20px;
+    position: relative;
+}
+
+/* Portfolio title (h1) style */
+header h1 {
+    text-align: left ;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: "Shrikhand-Regular", Arial, sans-serif;
+    text-shadow: -2px -2px 0 #45462a, 2px -2px 0 #45462a, -2px 2px 0 #45462a, 2px 2px 0 #45462a;
+}
+
+/* Navigation positioning and list style */
+nav {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Navigation links */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #efdcac;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Shrikhand-Regular", Arial, sans-serif; 
+    text-shadow: -1px -1px 0 #45462a, 1px -1px 0 #45462a, -1px 1px 0 #45462a, 1px 1px 0 #45462a;
+}
+
+/* Main container flexbox layout */
+.main-container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+/* Left section (About) styling */
+.left-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #d4a373; 
+    border-right: 2px solid #c4661f;
+}
+
+.image-row {
+    flex: 1;
+    padding: 0%;
+}
+
+.contact-row {
+    flex: 3;
+}
+
+.contacts-text {
+    color: #45462a;
+    line-height: 0.9;
+    padding-left: 20px;
+    font-family: "AlteHaasGroteskBold", Arial, sans-serif; 
+    font-size: large;
+}
+
+.about-row {
+    flex: 1;
+    position:relative; 
+}
+
+
+.about-me {
+    width: 100%; 
+    padding: 20px;
+    height: auto;
+    display: block;
+}
+
+/* Text overlay inside about section */
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    color: #45462a;
+    text-align: justify; 
+    padding: 100px; 
+    box-sizing: border-box;
+    line-height: 0.9; 
+    font-family: "AlteHaasGroteskBold", Arial, sans-serif; 
+    font-size: large;
+}
+
+.text-overlay p {
+    margin: 0;
+    text-align: justify; 
+}
+    
+/* Right section (Skills and Projects) */
+.right-section {
+    flex: 3;
+    padding: 20px;
+    background-color: #efdcac ;
+}
+
+.section {
+    padding: 20px 0;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Section titles (h2) */
+h2 {
+    font-family: "Shrikhand-Regular", Arial, sans-serif; 
+    color: #c4661f;
+    letter-spacing: 2px;
+    font-size:50px;
+}
+
+h4 {
+    font-family: "Shrikhand-Regular", Arial, sans-serif; 
+    color: #c4661f;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    font-size:50px;
+}
+
+h3 {
+    font-family: "AlteHaasGroteskBold", Arial, sans-serif; 
+    color: #45462a;
+    letter-spacing: 2px;
+    font-size:20px;
+}
+
+/* Skills */
+.logo1-content, .logo2-content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.logo1-image, .logo2-image {
+    width: 300px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.logo1-text, .logo2-text {
+    color: #45462a;
+    line-height: 0.9;
+    font-family: "AlteHaasGroteskBold", Arial, sans-serif; 
+    font-size: large;
+}
+
+/* Project */
+.project {
+    margin: 20px 0;
+}
+
+.proj1-image, .proj2-image {
+    width: 1000px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.proj1-text, .proj2-text {
+    color: #45462a;
+    line-height: 0.9;
+    font-family: "AlteHaasGrotesRegular", Arial, sans-serif; 
+    font-size: large;
+}
+
+/* Footer styles */
+footer {
+    background: #c4661f;
+    color: #efdcac;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #45462a;
+    color: #efdcac;
+    margin-top: 10px;
+}
+    
